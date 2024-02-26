@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        #tableOfContents {
+            width: 20%;
+            height: 100vh;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            transition: width 0.3s ease-in-out;
+        }
+
+        #tableOfContents:hover {
+            width: 25%;
+        }
+
+        #content {
+            width: 80%;
+            height: 100vh;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #videoContainer {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        #video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: margin-left 0.3s ease-in-out;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #555;
+            color: #fff;
+        }
+
+        td:hover {
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 20px;
+            font-size: 24px;
+            color: #333;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: margin-left 0.3s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            #tableOfContents {
+                width: 100%;
+            }
+
+            h1, table {
+                margin-left: 0;
+            }
+        }
+    </style>
+    <title>Extreme Level</title>
+</head>
+<body>
+
+<div id="tableOfContents">
+    <h1>Diet Recommendation</h1>
+    <table>
+        <tr>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+        </tr>
+        <tr>
+            <td>Paratha with Curd</td>
+            <td>Fish Curry with 
+                Steamed Veggies</td>
+            <td>Baked Fish with 
+                Quinoa Salad</td>
+            
+        </tr>
+        <tr>
+            <td>Rava Upma</td>
+            <td>Quinoa Salad with 
+                Chickpeas</td>
+            <td>Grilled Chicken</td>
+           
+        </tr>
+        <tr>
+            <td>Potato Puri</td>
+        
+        
+            
+        </tr>
+    </table>
+</div>
+
+<div id="content">
+    <div id="videoContainer">
+        <!-- Replace 'your-video-url' with the actual URL of your video -->
+        <!-- Example Placeholder -->
+        <iframe id="video" src="yt1s.com - The Best Meal Plan To Build Muscle Faster EAT LIKE THIS_1080p.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<script>
+    // Toggle video visibility and adjust margins on table and header on hover
+    document.getElementById('tableOfContents').addEventListener('mouseenter', function () {
+        document.getElementById('content').style.marginLeft = '25%';
+        document.querySelector('h1').style.marginLeft = '25%';
+        document.querySelector('table').style.marginLeft = '25%';
+    });
+
+    // Toggle video visibility and adjust margins on table and header on leave
+    document.getElementById('tableOfContents').addEventListener('mouseleave', function () {
+        document.getElementById('content').style.marginLeft = '20%';
+        document.querySelector('h1').style.marginLeft = '20%';
+        document.querySelector('table').style.marginLeft = '20%';
+
+        document.addEventListener('DOMContentLoaded', function () {
+        var video = document.getElementById('video');
+        video.currentTime = 210; 
+        video.autoplay();   
+    });
+</script>
+
+</body>
+</html>

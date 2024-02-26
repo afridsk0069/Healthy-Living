@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Healthy Living - Diet & Nutrition</title>
+    <style>
+        /* CSS for the ad containers */
+        .ad-container {
+            width: 200px; /* Adjust width as needed */
+            padding: 10px;
+            background-color: #f9f9f9;
+            text-align: center;
+            border: 1px solid #ddd;
+            margin: 10px;
+            float: left; /* Adjust for positioning */
+        }
+
+        .ad-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Healthy Living - Diet & Nutrition</h1>
+            <p>"Fuel your body with wholesome choices, and let every bite be a step toward a healthier, happier you."</p>
+        </div>
+    </header> 
+
+    <!-- Left ad container -->
+    <aside class="ad-container">
+        <h3>Advertisement</h3>
+        <img src="WhatsApp Image 2024-02-13 at 15.56.32_e94078c9.jpg" alt="Ad 1">
+        <p>Kashayam is today a highly recommended drink by many nutritionists who find it to 
+            be an effective way of staying healthy by boosting one’s immunity.</p> <br><br>
+        <img src="WhatsApp Image 2024-02-13 at 16.18.36_d3ede011.jpg" alt="Ad 2">
+        <p>It works by increasing Epinephrine (Adrenaline) levels in the blood, which prepares the body for intense physical exertion. It also breaks down stored body fat and releases 
+            fat cells into the blood stream in the form of free fatty acids.</p><br><br>
+        <img src="WhatsApp Image 2024-02-13 at 16.24.12_e86834c3.jpg" alt="Ad 3">
+        <p>Turmeric tea is a refreshing and antioxidant-rich beverage that can be enjoyed throughout the day. Steep an 
+            inch of turmeric root or ¼ teaspoon of turmeric powder in hot water and add a dash of lemon and honey for flavour.</p><br><br>
+    </aside>
+
+    <section class="bmi-section">
+        <h2>BMI Calculator</h2>
+        <form id="bmi-form">
+            <label for="height">Height (cm): </label>
+            <input type="number" id="height" name="height" required><br><br>
+            <label for="weight">Weight (kg): </label>
+            <input type="number" id="weight" name="weight" required><br><br>
+            <button type="submit">Calculate BMI</button>
+        </form>
+
+        <div id="result" style="display: none;">
+            <h2 id="bmi-value"></h2>
+            <p id="diet-suggestion"></p>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <h3>Select your weight Transformation category</h3>
+        <form id="weight-category-form">
+            <div class="weight-category-form">
+                <div class="weight-category">
+                    <img src="fat loose.png" alt="fat loss">
+                    <label>
+                        <input type="radio" name="weightCategory" value="fat"> Loose Fat
+                    </label>
+                </div>
+                <div class="weight-category">
+                    <img src="mass gain.png" alt="Mass gain">
+                    <label>
+                        <input type="radio" name="weightCategory" value="gain"> Gain Muscle
+                    </label>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="category-section">
+        <h2>Select Food Category</h2>
+        <form id="food-category-form">
+            <div class="food-category-container">
+                <div class="food-category">
+                    <img src="veg.jpg" alt="Vegetarian">
+                    <label>
+                        <input type="radio" name="foodCategory" value="veg"> Vegetarian
+                    </label>
+                </div>
+                
+                <div class="food-category">
+                    <img src="non veg.jpg" alt="Non-Vegetarian">
+                    <label>
+                        <input type="radio" name="foodCategory" value="non-veg"> Non-Vegetarian
+                    </label>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="gallery-section">
+        <h2>Food Gallery</h2>
+        <div class="gallery">
+            <a href="LOW.HTML">
+                <img src="Screenshot 2024-01-28 103935.png" alt="Image 1">
+            </a>
+            <a href="MODERATE.HTML">
+                <img src="Screenshot 2024-01-28 103950.png" alt="Image 2">
+            </a>
+            <a href="EXTREME.HTML">
+                <img src="Screenshot 2024-01-28 104008.png" alt="Image 3">
+            </a>
+        </div>
+    </section>
+
+    
+</body>
+</html>
